@@ -1,7 +1,9 @@
 import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
+import React from "react";
 
-function Expenses(props) {
+
+ const Expenses = (props)=> {
   return (
     <div className="expenses">
       <ExpenseItem
