@@ -36,11 +36,14 @@ import Expenses from "./components/Expenses/Expenses";
             date: new Date(2022 , 6, 29)
         },
 
-    ]
+    ];
+    const addExpenseHandler = (expense) => {
+        console.log(expense);
+    }
     return (
         <div>
             <h1 className="heading">Expense Tracker</h1>
-            <NewExpense />
+            <NewExpense onAddExpense = {addExpenseHandler} />
             <Expenses item = {expense}/>
         </div>
         
